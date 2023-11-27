@@ -1,0 +1,1 @@
+Projeto em Grupo destinado à aula de POO eem Java

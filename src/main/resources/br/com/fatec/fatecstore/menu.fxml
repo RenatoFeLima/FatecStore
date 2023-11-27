@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.fatecstore.MenuController">
+   <children>
+      <HBox prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <VBox id="menu_bar" alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="320.0" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../image/5f868784-b6e8-407d-8232-90a663500233.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="45.0" />
+                     </VBox.margin></ImageView>
+                  <Button fx:id="btnMenu" disable="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Menu Principal">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="text_button" fx:id="btnCadastrarProduto" alignment="CENTER" mnemonicParsing="false" onAction="#switchToCadastroProduto" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Cadastrar Produto" textAlignment="RIGHT" textFill="#5a5a5a">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="btnEditarDados" mnemonicParsing="false" onAction="#switchToEditarDados" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Editar Dados">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="btnVendas" mnemonicParsing="false" onAction="#switchToVenda" onDragDetected="#switchToVenda" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Vendas">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="btnConsultaAvancada" mnemonicParsing="false" onAction="#switchToConsultaAvancada" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Consulta Avançada">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="btnCadastrarVendedor" mnemonicParsing="false" onAction="#switchToCadastrarVendedor" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Cadastrar Vendedor">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin></Button>
+                  <Label id="outros" stylesheets="@style.css" text="OUTROS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Label>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Suporte">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#btnLogout" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Logout">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="960.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label id="sub_title" alignment="CENTER" prefHeight="27.0" prefWidth="802.0" stylesheets="@style.css" text="MODA AVANÇADA, INSPIRADA EM TECNOLOGIA." textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Pane>
+                     <children>
+                        <Pane id="banner1" maxWidth="-Infinity" prefHeight="220.0" prefWidth="780.0" stylesheets="@style.css" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="90.0" right="90.0" top="15.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <HBox maxHeight="400.0" minHeight="400.0" prefHeight="400.0" prefWidth="960.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="480.0" spacing="25.0">
+                           <children>
+                              <Pane id="banner2" prefHeight="220.0" prefWidth="200.0" stylesheets="@style.css" />
+                              <Pane id="banner3" prefHeight="220.0" prefWidth="200.0" stylesheets="@style.css" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="40.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="480.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="240.0">
+                                       <children>
+                                          <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../image/modeloNike4.jpeg" />
+                                             </image></ImageView>
+                                          <Label id="font_banner" stylesheets="@style.css" text="Nike" />
+                                          <Label id="font_codigo" stylesheets="@style.css" text="Dunk" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="240.0">
+                                       <children>
+                                          <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../image/modeloNike3.jpeg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label id="font_banner" stylesheets="@style.css" text="Nike" />
+                                          <Label id="font_codigo" stylesheets="@style.css" text="AirForce 1" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="240.0">
+                                       <children>
+                                          <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../image/modeloNike2.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin></ImageView>
+                                          <Label id="font_banner" stylesheets="@style.css" text="Nike" />
+                                          <Label id="font_codigo" stylesheets="@style.css" text="Airmax 90" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="240.0">
+                                       <children>
+                                          <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../image/modeloNike1.jpeg" />
+                                             </image></ImageView>
+                                          <Label id="font_banner" stylesheets="@style.css" text="Nike" />
+                                          <Label id="font_codigo" stylesheets="@style.css" text="Jordan 1" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Button mnemonicParsing="false" prefWidth="200.0" styleClass="button_verde" stylesheets="@style.css" text="mais modelos">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

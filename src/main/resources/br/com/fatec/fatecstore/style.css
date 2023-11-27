@@ -1,0 +1,127 @@
+.button_verde {
+    -fx-background-color: #03606C;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.button_verde:hover {
+    -fx-background-color: #04aec4;
+}
+
+.button_branco {
+    -fx-background-color: white;
+    -fx-text-fill: #757575;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.button_branco:hover {
+    -fx-background-color: #03606C;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button_confirma {
+    -fx-background-color: greenyellow;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #006400;
+}
+
+.button_confirma:hover {
+    -fx-background-color: #007516;
+    -fx-text-fill: #ffffff;
+}
+
+.button_cancela {
+    -fx-background-color: red;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #800000;
+}
+
+.button_cancela:hover {
+    -fx-background-color: #6e0000;
+    -fx-text-fill: #ffffff;
+}
+
+.title {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 50px;
+}
+
+.title_verde {
+    -fx-text-fill: #03606C;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.info {
+    -fx-text-fill: black;
+    -fx-font-size: 10px;
+}
+
+#sub_title {
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+#font_banner {
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+}
+
+#font_codigo {
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}
+
+#menu_bar {
+    -fx-background-color: linear-gradient(to bottom, #03606C, #FFFFFF);
+}
+
+#fonte {
+    -fx-font-family: "Corbel";
+}
+
+#outros {
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+#image {
+    -fx-border-radius: 10px;
+    
+}
+
+#image_menu{
+    -fx-background-image: url("../../../../image/menu.jpeg");
+    -fx-background-size: cover;
+}
+
+#image_cadastro{
+    -fx-background-image: url("../../../../image/cadastro.jpeg");
+    -fx-background-size: cover;
+}
+
+#banner1 {
+    -fx-background-image: url("../../../../image/banner1.jpeg");
+    -fx-background-size: cover;
+}
+
+#banner2 {
+    -fx-background-image: url("../../../../image/banner2.jpeg");
+    -fx-background-size: cover;
+}
+
+#banner3 {
+    -fx-background-image: url("../../../../image/banner3.jpeg");
+    -fx-background-size: cover;
+}
+
+#bannerProduto {
+    -fx-background-image: url("../../../../image/bannerProduto.jpeg");
+    -fx-background-size: cover;
+}

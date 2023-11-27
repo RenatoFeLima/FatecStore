@@ -1,0 +1,4 @@
+--patch-module
+br.com.fatec.fatecstore=_
+--add-reads
+br.com.fatec.fatecstore=ALL-UNNAMED
