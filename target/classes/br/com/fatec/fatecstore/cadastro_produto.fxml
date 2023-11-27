@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.fatecstore.Cadastro_produtoController">
+   <children>
+      <HBox prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <VBox id="menu_bar" alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="320.0" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../image/5f868784-b6e8-407d-8232-90a663500233.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="45.0" />
+                     </VBox.margin></ImageView>
+                  <Button id="text_button" mnemonicParsing="false" onAction="#switchToMenuPrincipal" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Menu Principal" textFill="#5a5a5a">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="text_button" disable="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Cadastrar Produto" textFill="#5a5a5a">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToEditarDados" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Editar Dados">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToVenda" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Vendas">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToConsultaAvancada" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Consulta Avançada">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToCadastrarVendedor" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Cadastrar Vendedor">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label id="outros" stylesheets="@style.css" text="OUTROS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#btnSuporte" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Suporte">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnLogout" prefHeight="30.0" prefWidth="250.0" styleClass="button_branco" stylesheets="@style.css" text="Logout">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="720.0" prefWidth="960.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="960.0">
+                     <children>
+                        <Label id="fonte" styleClass="title_verde" stylesheets="@style.css" text="CADASTRO DE PRODUTO" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding></HBox>
+                  <HBox prefHeight="400.0" prefWidth="960.0">
+                     <children>
+                        <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefWidth="480.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="100.0" text="MARCA: " />
+                                    <ComboBox fx:id="cbMarca" prefWidth="150.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="100.0" text="MODELO: " />
+                                    <TextField fx:id="txtModelo" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="480.0">
+                                 <children>
+                                    <Label prefWidth="100.0" text="VALOR: " />
+                                    <TextField fx:id="txtValor" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefWidth="100.0" text="QUANTIDADE: " />
+                                    <TextField fx:id="txtQuantidade" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="480.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="btnConfirmar" mnemonicParsing="false" onAction="#btnConfirmar" prefWidth="110.0" styleClass="button_confirma" stylesheets="@style.css" text="Confirmar">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets right="40.0" />
+                                       </HBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></Button>
+                                    <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelar" prefWidth="110.0" styleClass="button_cancela" stylesheets="@style.css" text="Cancelar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="40.0" top="20.0" />
+                     </padding></HBox>
+                  <Pane id="bannerProduto" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css" />
+               </children>
+               <padding>
+                  <Insets left="25.0" right="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
